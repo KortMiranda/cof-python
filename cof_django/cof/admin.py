@@ -5,7 +5,4 @@ from .models import Product
 
 admin.site.register(Product)
 
-# class ProductSerializers(serializers.HyperlinkedModelSerializer):
-#     class Meta:
-#         model = Product
-#         fields = ('description', 'image', 'name', 'price', 'category')
+
