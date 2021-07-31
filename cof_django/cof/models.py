@@ -19,4 +19,9 @@ class Product(models.Model):
         return self.name
 
 
+class Review(models.Model):
+    client = models.CharField(max_length=150)
+    content = models.TextField()
 
+    def __str__(self):
+        return self.client
