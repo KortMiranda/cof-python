@@ -22,6 +22,7 @@ class Product(models.Model):
 class Review(models.Model):
     client = models.CharField(max_length=150)
     content = models.TextField()
+    product = models.ForeignKey(Product, on_delete=models.CASCADE, related_name='product', null=True)
 
     def __str__(self):
         return self.client
